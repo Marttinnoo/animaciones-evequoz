@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*----------GRILLAS----------*/
+
+.c-grids{
+    margin: auto;
+    font-size: xx-large;
+    /*habilito grilla*/
+    display: grid;
+    /*determino grilla*/
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px auto 150px;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+/*----------HEADER----------*/
+
+.encabezado{
+    background-color: gray;
+    grid-area: header;
+    font-size: medium;
+    color: black;
+    padding: 2px;
+}
+.encabezado img{
+    width: 100px;
+    height: 100px;
+    padding:10px;
+    margin: 5px;
+}
+.foto{
+    display: flex;
+    align-items: center;
+}
+.titulo{
+    text-align: center;
+    align-items: center;
+    font-size: x-large;
+    color: black;
+}
+
+/*----------MAIN----------*/
+
+.principal{
+    background-color: white;
+    grid-area: main;
+}
+.title{
+    text-align: center;
+}
+.fotoi img{
+    width: 400px;
+    height: 400px;
+
+}
+.fotoi{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+.fotou img{
+    width: 400px;
+    height: 400px;
+}
+.fotou{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.info{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+
+}
+.infodos{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+
+}
+.titu{
+    text-align: center;
+}
+.infop{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+}
+.text{
+    text-align: center;
+}
+
+
+/*----------FOOTER----------*/
+
+.pie{
+    background-color: gray;
+    grid-area: footer;
+}
+footer img{
+    height: 50px;
+    width: 50px;
+}
+footer{
+    display: flex;
+    align-items: center;
+}
+
+/*----------MEDIA QUIRES----------*/
+/*----------RESPONSIVE MAX-WIDTH----------*/
+
+@media screen and (max-width:850px){
+    .fotoi{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
